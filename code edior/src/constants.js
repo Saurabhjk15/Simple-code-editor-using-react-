@@ -1,0 +1,38 @@
+export const LANGUAGE_VERSIONS = {
+  javascript: "18.15.0",
+  typescript: "5.0.3",
+  python: "3.10.0",
+  java: "15.0.2",
+  csharp: "6.12.0",
+  php: "8.2.3",
+  html: "5",
+  css: "3",
+  c: "17",
+  cpp: "20",
+  react: "18.2.0",
+  ruby: "3.2.2",
+  go: "1.20",
+  rust: "1.68",
+  swift: "5.8",
+  kotlin: "1.8",
+};
+
+export const CODE_SNIPPETS = {
+  javascript: `\nfunction greet(name) {\n\tconsole.log("Hello, " + name + "!");\n}\n\ngreet("Saurabh");\n`,
+  typescript: `\ntype Params = {\n\tname: string;\n}\n\nfunction greet(data: Params) {\n\tconsole.log("Hello, " + data.name + "!");\n}\n\ngreet({ name: "Saurabh" });\n`,
+  python: `\ndef greet(name):\n\tprint("Hello, " + name + "!")\n\ngreet("Saurabh")\n`,
+  java: `\npublic class HelloWorld {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println("Hello World");\n\t}\n}\n`,
+  csharp:
+    'using System;\n\nnamespace HelloWorld\n{\n\tclass Hello { \n\t\tstatic void Main(string[] args) {\n\t\t\tConsole.WriteLine("Hello World in C#");\n\t\t}\n\t}\n}\n',
+  php: "<?php\n\n$name = 'Saurabh';\necho $name;\n",
+  html: `<!DOCTYPE html>\n<html>\n<head>\n\t<title>Page Title</title>\n</head>\n<body>\n\t<h1>My First Heading</h1>\n\t<p>My first paragraph.</p>\n</body>\n</html>`,
+  css: `body {\n\tbackground-color: lightblue;\n}\n\nh1 {\n\tcolor: white;\n\ttext-align: center;\n}\n\np {\n\tfont-family: verdana;\n\tfont-size: 20px;\n}`,
+  c: `#include <stdio.h>\n\nint main() {\n\tprintf("Hello, World!\\n");\n\treturn 0;\n}`,
+  cpp: `#include <iostream>\nusing namespace std;\n\nint main() {\n\tcout << "Hello World!";\n\treturn 0;\n}`,
+  react: `import React from 'react';\n\nfunction App() {\n\treturn (\n\t\t<div>\n\t\t\t<h1>Hello, world!</h1>\n\t\t</div>\n\t);\n}\n\nexport default App;`,
+  ruby: `puts "Hello World!"`,
+  go: `package main\n\nimport "fmt"\n\nfunc main() {\n\tfmt.Println("Hello, World!")\n}`,
+  rust: `fn main() {\n\tprintln!("Hello, world!");\n}`,
+  swift: `import Swift\n\nprint("Hello, world!")`,
+  kotlin: `fun main() {\n\tprintln("Hello, World!")\n}`,
+};
